@@ -1,0 +1,51 @@
+form {
+    border: 4px solid #f1f1f1;
+  }
+ 
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+
+  .container h1{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #c4c4c4;
+    text-align:center;
+    text-align:center;
+  }
+
+  .subscribe-title{
+    text-align:center
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Quicksand;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  input[type="submit"]{
+    color: #FFFFFF;
+  }
+  
+  
+  input[type=submit] {
+    background: #00AFEC;
+    background: linear-gradient(180deg, #83DFFF 0%, #00AFEC 100%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }

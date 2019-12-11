@@ -1,0 +1,145 @@
+<div class="globalContainer">
+
+    <div class="codeContainer">
+        <!-- <ion-grid>
+            <ion-row>
+              <ion-col class=" redBorder centerCol pin "> -->
+                <span *ngIf="pinText" class="centerCol pinText">entre le code classe</span>
+                <span *ngIf="!pinText" class="centerCol pin">{{pin}}</span>
+              <!-- </ion-col>    
+            </ion-row>
+          </ion-grid> -->
+</div>
+
+
+  
+      <div class="buttonsContainer">
+        <ion-grid fixed>
+
+  
+          <!-- Row 1 -->
+          <ion-row class="centerCol">
+  
+            <ion-col size="3" class="centerCol">
+                <div class="customButton" (click)="handleInput('1')" >
+                  <span class="numButtonFont">
+                    1
+                  </span>
+                </div>
+            </ion-col>
+  
+            <ion-col size="3" class="centerCol">
+                <div class="customButton" (click)="handleInput('2')" >
+                  <span class="numButtonFont">
+                    2
+                  </span>
+                </div>
+            </ion-col>
+  
+            <ion-col size="3" class="centerCol">
+                <div class="customButton" (click)="handleInput('3')">
+                  <span class="numButtonFont">
+                    3
+                  </span>
+                </div>
+              </ion-col>
+          </ion-row>
+  
+          <!-- Row 2 -->
+          <ion-row class="centerCol" >
+            
+              <ion-col size="3" class="centerCol">
+                  <div class="customButton" (click)="handleInput('4')" >
+                    <span class="numButtonFont">
+                      4
+                    </span>
+                  </div>
+              </ion-col>
+    
+              <ion-col size="3" class="centerCol">
+                  <div class="customButton" (click)="handleInput('5')" >
+                    <span class="numButtonFont">
+                      5
+                    </span>
+                  </div>
+              </ion-col>
+    
+              <ion-col size="3" class="centerCol">
+                  <div class="customButton" (click)="handleInput('6')">
+                    <span class="numButtonFont">
+                      6
+                    </span>
+                  </div>
+                </ion-col>
+            </ion-row>
+  
+            <!-- Row 3 -->
+            <ion-row class="centerCol">
+            
+                <ion-col size="3" class="centerCol">
+                    <div class="customButton" (click)="handleInput('7')" >
+                      <span class="numButtonFont">
+                      7
+                      </span>
+                    </div>
+                </ion-col>
+      
+                <ion-col size="3" class="centerCol">
+                    <div class="customButton" (click)="handleInput('8')" >
+                      <span class="numButtonFont">
+                      8
+                      </span>
+                    </div>
+                </ion-col>
+      
+                <ion-col size="3" class="centerCol">
+                    <div class="customButton" (click)="handleInput('9')">
+                      <span class="numButtonFont">
+                      9
+                      </span>
+                    </div>
+                  </ion-col>
+              </ion-row>
+  
+              <!-- Row 4 -->
+              <ion-row class="centerCol">
+            
+                  <ion-col size="3" class="centerCol" (click)="handleInput('clear')">
+                      <div class="customButton4" >
+                        <span class="textButtonFont">
+                        Effacer
+                        </span>
+                      </div>
+                  </ion-col>
+        
+                  <ion-col size="3" class="centerCol" (click)="handleInput('0')">
+                      <div class="customButton4" >
+                        <span class="numButtonFont">
+                        0
+                        </span>
+                      </div>
+                  </ion-col>
+        
+                  <ion-col size="3" class="centerCol">
+
+                      <div *ngIf="codeValidated" class="customButton4 buttonEnabled" (click)="emitEvent()">
+                        <span class="textButtonFont">
+                        Entree
+                        </span>
+                      </div>
+
+                      <div *ngIf="!codeValidated" class="customButton4 buttonDisabled">
+                          <span class="textButtonFont">
+                          Entree
+                          </span>
+                        </div>
+
+                    </ion-col>
+                </ion-row>
+  
+  
+        </ion-grid>
+          
+        </div>
+
+      </div>

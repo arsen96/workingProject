@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ng-container *ngIf="!selected">
+  <div class="title_page"> 
+    <h1>Choisissez une catégorie</h1>
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let data of categories" (click)="categoryChoosed(data.id)">
+      <ion-label><p class="category_name">{{ data.name }}</p> 
+        <ion-badge *ngIf="data.count == 1"> {{data.count}} article </ion-badge> 
+        <ion-badge *ngIf="data.count > 1"> {{data.count}} articles </ion-badge></ion-label>
+    </ion-item>
+  </ion-list>
+</ng-container>
+
+  <!-- <ng-container *ngIf="selected">
+    <app-posts [selectedId]="selectedId"></app-posts> 
+  </ng-container> -->
+
+
+</ion-content>

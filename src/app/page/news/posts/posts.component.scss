@@ -1,0 +1,69 @@
+ion-card-header {
+  display: flex;
+  justify-content: center;
+}
+ion-card .date {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+ion-card {
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 10px;
+}
+
+ion-card h1 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #c4c4c4;
+  text-align:center
+}
+
+ion-card {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}
+
+button{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #83DFFF 0%, #00AFEC 100%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.date{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+}

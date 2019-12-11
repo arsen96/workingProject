@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ressources</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+      <ion-content >
+          <ion-card *ngFor="let ressource of ressources;let i = index" (click)="changeURL(ressource)">
+              <div class="ion-img">
+                <ion-img [src]="ressource.image" ></ion-img>
+              </div>
+                
+              <ion-card-header>
+                  <ion-card-title ><h1>{{ressource.title}}</h1></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+               <p>{{ressource.description}}</p> 
+            </ion-card-content>
+          </ion-card>
+        </ion-content>
+        <!-- <ion-app *ngFor="let ressource of ressources">
+            <ion-header translucent>
+              <ion-toolbar>
+                <ion-title>{{ressource.title}}</ion-title>
+              </ion-toolbar>
+            </ion-header>,
+            <ion-content fullscreen>
+              <ion-card>
+                <img [src]="ressource.URL" />
+                <ion-card-header>
+                  <ion-card-title>{{ressource.title}}</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                 {{ressource.description}}
+                </ion-card-content>
+              </ion-card>
+            </ion-content>
+          </ion-app> -->
+

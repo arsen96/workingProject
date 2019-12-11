@@ -1,0 +1,24 @@
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Card</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content fullscreen>
+    <ion-card *ngFor="let posts of allPosts;let i = index">
+        <p class="date">Article paru le {{posts.date |  date: 'd/MM/y' }}</p>
+      <ion-card-header>
+        <ion-card-title>
+         <h1>{{posts.title.rendered  }}</h1> 
+        </ion-card-title>
+      </ion-card-header>
+      <hr style="color:red;background-color:grey;"><!--{{posts.excerpt.rendered | safeHtml}}-->
+      <p class="content" [innerHTML]="getHtml(posts.excerpt.rendered )">  </p>
+      <div class="btn">
+          <button (click)="readPost(i)" >Lire l'article</button>
+      </div>
+    </ion-card>
+  </ion-content>
+</ion-app>
+
+

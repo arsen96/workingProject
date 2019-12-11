@@ -1,0 +1,42 @@
+.title_page{
+    text-align:center;
+}
+
+h1{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #C4C4C4;
+}
+
+p{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+
+ion-label{
+    display:flex!important;
+    
+}
+
+ion-badge{
+   position:absolute;
+   right:20%;
+}
+
+.category_name{
+    position:absolute;
+    left:20%;
+}
+
+ion-item{
+    cursor:pointer;
+}
+

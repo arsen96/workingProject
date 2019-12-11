@@ -1,0 +1,82 @@
+
+
+	
+	<!-- <ion-header class="blueBorderHeader">
+		<ion-toolbar>
+			<ion-buttons slot="start">
+				<ion-menu-button></ion-menu-button>
+			</ion-buttons>
+			<ion-title i18n>starting</ion-title>
+		</ion-toolbar>
+	</ion-header> -->
+	
+	<ion-content class="blueBorderContent">
+
+	<app-toggle-menu></app-toggle-menu>
+
+	<div class="mathiaContainer">
+
+			<div class="mascotteContainer">
+
+					<ion-img [src]="'../../../assets/mathia/mascotte.png'" class="mascotte"
+					></ion-img>
+					<div class="bubble">
+						<ion-img [src]="'../../../assets/mathia/mascot/option.svg'" class="helpText"
+						></ion-img>
+						<ion-img [src]="'../../../assets/mathia/mascot/play.svg'" class="playText" (click)="playText()"
+						></ion-img>
+					</div>
+				</div>
+
+	</div>
+
+		<div class="buttonsContainer">
+			<!-- create-class button -->
+			
+			<!-- unclicked -->
+			<div
+			*ngIf="!receivedCode"
+			class="customButton1Unclicked gradient"
+			(click)="createClasse()"
+			>
+			<span class="buttonText">
+				Créer sa classe
+			</span>
+		</div>
+		
+		<!-- clicked -->
+		<div *ngIf="receivedCode" class="customButton1Clicked gradient">
+
+				<ion-grid fixed class="ion-no-margin">
+					<ion-row>
+						<ion-col size="12">
+							<span class="buttonText">
+								code classe:
+							</span>
+						</ion-col>
+						<ion-col size="12">
+							<span class="button1ClassCode">
+								{{receivedCode}}
+							</span>
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+			</div>
+
+			
+		<!-- connect class button -->
+		<div class="customButton2 gradient" [routerLink]="['/class-code-entry']">
+			<span class="buttonText">
+				Se connecter à une classe
+			</span>
+		</div>
+		
+		<!-- no class button -->
+		<div class="customButton3 gradient" [routerLink]="['/grades']">
+			<span class="buttonText">
+				Jouer hors classe
+			</span>
+		</div>
+	</div>
+</ion-content>
+

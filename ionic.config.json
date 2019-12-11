@@ -1,0 +1,7 @@
+{
+  "name": "MathIA",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

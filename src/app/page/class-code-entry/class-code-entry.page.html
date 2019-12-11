@@ -1,0 +1,37 @@
+<!-- <ion-header class="blueBorderHeader">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title i18n>Code Classe</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+<ion-content class="blueBorderContent">
+
+    <app-toggle-menu></app-toggle-menu>
+
+  <!-- <div class="redBorder"> -->
+
+    <div class="mathiaContainer">
+
+          <div class="mascotteContainer">
+    
+              <ion-img [src]="'../../../assets/mathia/mascotte.png'" class="mascotte"
+              ></ion-img>
+              <div class="bubble">
+                <ion-img [src]="'../../../assets/mathia/mascot/codeEntry.svg'" class="helpText"
+                ></ion-img>
+                <ion-img [src]="'../../../assets/mathia/mascot/play.svg'" class="playText" (click)="playText()"
+                ></ion-img>
+              </div>
+            </div>
+    
+      </div>
+<!-- 
+  </div> -->
+
+    
+    <app-numpad (change)="receiveCode($event)"></app-numpad>
+    
+</ion-content>

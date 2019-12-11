@@ -1,0 +1,148 @@
+
+.menuLogo {
+  height: 3vh;;
+}
+
+.redBorder {
+  border: red 1px solid;
+}
+
+.mathiaContainer {
+  height: 25vh;
+}
+
+.mascotteContainer {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; 
+}
+
+.mascotte {
+  height: 70%;
+  width: 15vh;
+  margin-left: 7vw;
+  margin-right: 0%;
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.helpText {
+  // border: green 1px solid;
+  // align-self: flex-start;
+  // margin-top: 30px;
+  // position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 2vh;
+}
+
+.playText {
+  position: relative;
+  top: 35px;
+  right: 40px;
+  width: 50px;
+}
+
+.buttonsContainer {
+  height: 68vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.customButton1Unclicked {
+  width: 70%;
+  height: 15vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: calc(3vh + 15px);
+  margin-bottom: calc(3vh - 15px);
+}
+
+.customButton1Clicked {
+  width: 70%;
+  height: 15vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: calc(3vh + 15px);
+  margin-bottom: calc(3vh - 15px);
+}
+
+.customButton1Clicked:focus, .customButton2:focus, .customButton3:focus {
+  outline: none;
+}
+
+.buttonText {
+  font-size: 5vh;
+  font-family: "quicksand-bold";
+  margin: 1vh;
+  color: white;
+}
+
+.button1ClassCode {
+  font-size: 7vh;
+  font-family: "quicksand-bold";
+  color: white;
+}
+
+.codeContainer {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.customButton2 {
+  width: 70%;
+  height: 15vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3vh;
+}
+
+.customButton3 {
+  width: 70%;
+  height: 15vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: calc(3vh - 15px);
+  margin-bottom: calc(3vh + 15px);
+}
+
+.gradient {
+    background: linear-gradient(#5EE1FC, #00B6E8);
+}
+
+.blueBorderHeader {
+  border: #5EE1FC 15px solid; 
+  border-bottom: none;
+}
+
+.blueBorderContent {
+  border: #5EE1FC 15px solid; 
+}

@@ -1,0 +1,103 @@
+
+.buttonsContainer {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.customButtons {
+  width: 85vw;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh;
+}
+
+.customButton1 {
+  background: linear-gradient(#FFD89C, #FFB44D);
+  margin-top: calc(3vh + 15px);
+  margin-bottom: calc(3vh - 15px);
+}
+
+.customButton2 {
+  background: linear-gradient(#5EE1FC, #00B6E8);
+}
+
+.customButton3 {
+  background: linear-gradient(#FF74B5, #FF0073);
+  margin-top: calc(3vh - 15px);
+  margin-bottom: calc(3vh + 15px);
+}
+
+.buttonText {
+  font-size: 7vh;
+  font-family: "quicksand-bold";
+  color: white;
+}
+
+.customButton1:focus, .customButton2:focus, .customButton3:focus {
+  outline: none;
+}
+
+.blueBorderHeader {
+  border: #5EE1FC 15px solid; 
+  border-bottom: none;
+}
+
+.blueBorderContent {
+  border: #5EE1FC 15px solid; 
+  border-top: #5EE1FC 15px solid;
+}
+
+// Mascotte
+
+.mathiaContainer {
+  height: 25vh;
+}
+
+.mascotteContainer {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; 
+}
+
+.mascotte {
+  height: 70%;
+  width: 15vh;
+  margin-left: 7vw;
+  margin-right: 0%;
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.helpText {
+  // border: green 1px solid;
+  // align-self: flex-start;
+  // margin-top: 30px;
+  // position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 2vh;
+}
+
+.playText {
+  position: relative;
+  top: 60px;
+  right: 40px;
+  width: 50px;
+}

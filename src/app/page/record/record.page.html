@@ -1,0 +1,147 @@
+<!-- <ion-header class="blueBorderHeader">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title>record</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+<ion-content class="blueBorderContent">
+
+  <app-toggle-menu></app-toggle-menu>
+
+  <div class="recordContainer ">
+
+    <select [(ngModel)]="selectedVoice" *ngIf="voices.length > 0">
+      <option NgSelectOption *ngFor="let voice of voices" [ngValue]="voice">
+        {{voice.name}}
+      </option>
+    </select>
+    <div class="textRecordArea">
+      <div class='topTextContainer'>
+        <div class='content' *ngFor="let phrase of topText">
+          {{phrase.display}}
+        </div>
+      </div>
+
+      <div class="currentTextContainer">
+
+        <!-- play button -->
+        <div class="buttonCurrent">
+
+          <ion-button expand="block" color="secondary" (click)='playTTS()'>
+            <ion-icon slot="icon-only" name="play"></ion-icon>
+          </ion-button>
+
+        </div>
+
+        <!-- text -->
+        <div class="textCurrent">
+
+          <div class="textPlayed">
+            {{currentPhrase.display}}
+          </div>
+
+        </div>  
+        
+      </div>
+      <div class='bottomTextContainer'>
+        <div class='content' *ngFor="let phrase of bottomText">
+          {{phrase.display}}
+        </div>
+      </div>
+    </div>
+    <!-- <ion-item-divider></ion-item-divider> -->
+
+    <div class="buttonsContainer" >
+      
+      <ion-grid class="ion-no-padding" *ngIf="!currentPhrase.recordFile && !record && !end || record && !end">
+        <ion-row class="ion-align-items-center ion-justify-content-center">
+          <ion-col size="4" class=""></ion-col>
+          <ion-col size="4" class="recButton">
+            <!-- start record -->
+              <img (click)='startRecord()' src="../../../assets/mathia/buttons/rec/rec.svg" *ngIf="!currentPhrase.recordFile && !record && !end">
+            <!-- stop record -->
+              <img src="../../../assets/mathia/buttons/rec/rec2.png" *ngIf="record && !end" (click)='stopRecord()'>
+            </ion-col>
+            <ion-col size="4" class=""></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4" class=""></ion-col>
+            <ion-col size="4" class="recButton quicksand">
+              <span>J'enregistre ma phrase</span>
+            </ion-col>
+            <ion-col size="4" class=""></ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      
+      
+      <!-- Validation -->
+    <ion-grid class="ion-no-padding  validationGrid" *ngIf="currentPhrase.recordFile && !end">
+
+      <ion-row class="ion-align-items-center ion-justify-content-center shiftY">
+        <!-- replay record -->
+          <ion-col sizeMd="1" sizeXs="2" class="playContainer playRecord">
+            <!-- v1 -->
+              <div class="playContainer" *ngIf="currentPhrase.recordFile && !end">
+                  <ion-button  expand="block" color="secondary" (click)='playCurrentRecord()'>
+                    <ion-icon slot="icon-only" name="play"></ion-icon>
+                  </ion-button>
+              </div>
+            <!-- v2 -->
+            <!-- <img *ngIf="currentPhrase.recordFile && !end" (click)='playCurrentRecord()' src="../../../assets/mathia/buttons/Rectangle 7 (2).svg"> -->
+          </ion-col>
+          <!-- <ion-col sizeMd="2" sizeXs="1"></ion-col> -->
+          <!-- validate -->
+          <ion-col size="5" class="playContainer" (click)='validateRecord()'>
+              <img *ngIf="currentPhrase.recordFile && !end" src="../../../assets/mathia/buttons/validation/valid/validate.png">
+              <!-- <span class="quicksand">Je valide ma phrase</span> -->
+            </ion-col>
+            <!-- refuse -->
+          <ion-col size="5" class="playContainer">
+              <img *ngIf="currentPhrase.recordFile && !end" (click)='refuseRecord()' src="../../../assets/mathia/buttons/validation/Group 11.svg">
+              <!-- <span class="quicksand">Je refais ma phrase</span> -->
+          </ion-col>
+          <ion-col size="1"></ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="1" class=""></ion-col>
+            <ion-col size="5" class="recButton quicksand">
+              <span>Je valide ma phrase</span>
+            </ion-col>
+            <ion-col size="5" class="recButton quicksand">
+                <span>Je refais ma phrase</span>
+            </ion-col>
+            <ion-col size="1" class=""></ion-col>
+            
+        </ion-row>
+      </ion-grid>
+
+
+
+
+
+    <!-- End -->
+
+      <!-- new text -->
+        <ion-button *ngIf="end" color="primary" (click)='ionViewWillEnter()'>Nouveau texte</ion-button>
+
+      <!-- Home -->
+        <ion-button *ngIf="end" color="primary" routerLink="/starting" routerDirection="root">Home</ion-button>
+
+    </div>
+
+
+    <!-- <ion-button *ngIf="!currentPhrase.recordFile && !record && !end" color="primary" (click)='startRecord()'>Record</ion-button> -->
+    <!-- <ion-button *ngIf="record && !end" color="primary" (click)='stopRecord()'>Stop Record</ion-button> -->
+    <!-- <ion-button *ngIf="currentPhrase.recordFile && !end" color="primary" (click)='refuseRecord()'>Refuse</ion-button>
+    <ion-button *ngIf="currentPhrase.recordFile && !end" color="primary" (click)='validateRecord()'>Validate</ion-button> -->
+    <!-- <ion-button color="primary" (click)='playCurrentRecord()'>Play record</ion-button> -->
+    
+  </div>
+</ion-content>

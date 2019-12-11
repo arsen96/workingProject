@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="form" class="form" (submit)="onSubmit()">
+        <ion-item>
+          <ion-label  color="primary" position="floating">Que souhaiteriez vous changer ou améliorer dans l'application</ion-label>
+          <ion-input type="text"   formControlName="amelioration"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label color="primary" position="floating">Des suggestions</ion-label>
+            <ion-input type="text"   formControlName="suggestion"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary">Note</ion-label>
+            <ion-range min="0" max="10" step="1" formControlName="note">
+            </ion-range>
+          </ion-item>
+        
+          <ion-button type="submit" expand="block" [disabled]="!form.valid">Envoyer</ion-button>
+      </form>
+</ion-content>

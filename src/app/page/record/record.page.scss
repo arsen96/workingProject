@@ -1,0 +1,154 @@
+.topTextContainer {
+	filter: blur(1px);
+	display: flex;
+	flex-direction: column-reverse;
+	height: 32vh;
+	overflow: hidden;
+}
+
+.bottomTextContainer {
+	filter: blur(1px);
+	height: 29vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	clear: both;
+	transform: translateX(1vw);
+	// border: black 3px solid;
+}
+
+.textRecordArea {
+		height: 65vh;
+		// border: black 3px solid;
+    // jim
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.currentTextContainer {
+	border: #5ee1fc 4px solid;
+	border-radius: 15px;
+	// border-style: groove;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 5px;
+}
+
+.buttonCurrent {
+	// border: red 1px solid;
+	align-content: center;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	// text-align: center;
+}
+
+.playRecord {
+	transform: translateX(-5px);
+}
+
+.textCurrent {
+	// border: red 1px solid;
+	width: 87%;
+	height: 100%;
+	// display: flex;
+	// justify-content: center;
+	// align-content: center;
+	// transform: translateX(-5vw);
+}
+
+.textPlayed {
+	// border: green 1px solid;
+	// transform: translateX(-4vw);
+	font-family: "quicksand-bold";
+	font-size: 4vw;
+	height: 100%;
+	display: flex;
+  justify-content: center;
+  flex-direction: column;
+	text-align: center;
+}
+
+.quicksand {
+	font-family: "quicksand-bold";
+	font-size: 2vh;
+	color: #00B3E7;
+	text-align: center;
+}
+
+.blueBorderHeader {
+	border: #5ee1fc 15px solid;
+	border-bottom: none;
+}
+
+.blueBorderContent {
+	border: #5ee1fc 15px solid;
+}
+
+.recordContainer {
+		margin: 15px;
+		margin-top: 0;
+		height: 96%;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh;
+}
+
+	.mic{
+		position: fixed;
+		transform: translate(-125px, 35px);
+		// border: 1px solid red;
+	}
+	.ellipse{
+		position: fixed;
+		transform: translate(-55px, 15px);
+	}
+
+	.playContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
+
+	.redBorder {
+		border: red 1px solid;
+	}
+
+	.blueBorder {
+		border: blue 1px solid;
+	}
+
+	.shiftY {
+		// transform: translateY(-3px);
+	}
+
+	.vectorV {
+		position: fixed;
+	}
+
+	.recButton {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.validationGrid {
+		width: 100%;
+	}

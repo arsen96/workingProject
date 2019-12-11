@@ -1,0 +1,53 @@
+<!-- <ion-header class="blueBorderHeader">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title i18n>Choix de la classe</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  
+  <ion-content class="blueBorderContent">
+
+<app-toggle-menu></app-toggle-menu>
+
+<div class="mathiaContainer">
+
+    <div class="mascotteContainer">
+
+        <ion-img [src]="'../../../assets/mathia/mascotte.png'" class="mascotte"
+        ></ion-img>
+        <div class="bubble">
+          <ion-img [src]="'../../../assets/mathia/mascot/class.svg'" class="helpText"
+          ></ion-img>
+          <ion-img [src]="'../../../assets/mathia/mascot/play.svg'" class="playText" (click)="playText()"
+          ></ion-img>
+        </div>
+      </div>
+
+</div>
+
+
+    <!-- Item as a Button -->
+    <div class="buttonsContainer">
+  
+      <div class="customButton1 customButtons" [routerLink]="['/record']" (click)="sendGrade('CP')">
+        <span class="buttonText">
+          CP
+        </span>
+      </div>
+  
+      <div class="customButton2 customButtons" [routerLink]="['/record']" (click)="sendGrade('CE1')">
+        <span class="buttonText">
+          CE1
+        </span>
+      </div>
+  
+      <div class="customButton3 customButtons" [routerLink]="['/record']" (click)="sendGrade('CE2')">
+        <span class="buttonText">
+          CE2
+        </span>
+      </div>
+      
+    </div>
+  </ion-content>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clm_data>
+<cps_document version="3.5.0 (291)" platform="Windows">
+<cps_properties>
+</cps_properties>
+<![CDATA[
+<de_figure version="1.0.1.276" format="1.0">
+</de_figure>
+<cg_view version="1.0.1" format="1.0">
+</cg_view>
+]]>
+
+<cps_document_structure format="0.2">
+	<layout>
+		<size width="21cm" height="14.85cm"/>
+	</layout>
+	<layerlist>
+		<layer id="1" name="p1.1"/>
+		<layer id="2" name="p2.1"/>
+		<layer id="3" name="p3.1"/>
+	</layerlist>
+	<pagelist>
+		<page>
+			<name>Page 1</name>
+			<appearance>
+				<sheet>
+					<color>(1, 1, 1, 1)</color>
+					<image position="stretch" alleviation="0"><md5></md5></image>
+				</sheet>
+				<background>
+					<color>(0.98, 0.98, 0.98, 1)</color>
+					<image position="stretch" alleviation="0"><md5></md5></image>
+				</background>
+			</appearance>
+			<calculator x="-2.85" y="3.015" mode="num" settable_mode="true" precision="2" opened="false"/>
+			<azimuth value="0" locked="true"/>
+			<elevation value="90" locked="true"/>
+			<layers>
+				<layer id="1" main="true"/>
+			</layers>
+		</page>
+		<page>
+			<name>Page 2</name>
+			<appearance>
+				<sheet>
+					<color>(1, 1, 1, 1)</color>
+					<image position="stretch" alleviation="0"><md5></md5></image>
+				</sheet>
+				<background>
+					<color>(0.98, 0.98, 0.98, 1)</color>
+					<image position="stretch" alleviation="0"><md5></md5></image>
+				</background>
+			</appearance>
+			<calculator x="-2.85" y="3.015" mode="num" settable_mode="true" precision="2" opened="false"/>
+			<azimuth value="0" locked="true"/>
+			<elevation value="90" locked="true"/>
+			<layers>
+				<layer id="2" main="true"/>
+			</layers>
+		</page>
+		<page>
+			<name>Page 3</name>
+			<appearance>
+				<sheet>
+					<color>(1, 1, 1, 1)</color>
+					<image position="stretch" alleviation="0"><md5></md5></image>
+				</sheet>
+				<background>
+					<color>(0.98, 0.98, 0.98, 1)</color>
+					<image position="stretch" alleviation="0"><md5></md5></image>
+				</background>
+			</appearance>
+			<calculator x="-2.85" y="3.015" mode="num" settable_mode="true" precision="2" opened="false"/>
+			<azimuth value="0" locked="true"/>
+			<elevation value="90" locked="true"/>
+			<layers>
+				<layer id="3" main="true"/>
+			</layers>
+		</page>
+	</pagelist>
+</cps_document_structure>
+
+<cps_settings format="0.2">
+	<windowcontext>zoom_adjust="true" zoom_visible="false" zoom_value="100" zoom_sliders_hv="0.5,0.5" window_geometry="AdnQywACAAAAAAJvAAAAywAABhwAAAQRAAACfwAAARMAAAYMAAAEAQAAAAAAAAAADwA=" dock_view="false,false"</windowcontext>
+	<profile>creator</profile>
+	<level id="2"/>
+	<tooltips enabled="true"/>
+	<undoredo enabled="true"/>
+	<autosave enabled="true"/>
+	<turnpage enabled="true"/>
+	<rtlorientation enabled="false"/>
+	<arrowsonlines enabled="false"/>
+	<pagesbrowser enabled="false"/>
+	<blocks realistic="true"/>
+	<animated>false</animated>
+	<locked>false</locked>
+	<attributes>
+		<id>point</id>
+		<pencolor>(0.8, 0.2, 0.2, 1)</pencolor>
+		<pointshape>dil</pointshape>
+	</attributes>
+	<attributes>
+		<id>line</id>
+		<pencolor>(0, 0, 1, 1)</pencolor>
+		<pensize>2</pensize>
+		<arrowshape>cir</arrowshape>
+	</attributes>
+	<attributes>
+		<id>vector</id>
+		<pencolor>(0.2, 0.8, 0.2, 1)</pencolor>
+		<pensize>2</pensize>
+	</attributes>
+	<attributes>
+		<id>circle</id>
+		<pencolor>(0, 0.5, 0, 1)</pencolor>
+		<pensize>2</pensize>
+		<filled>true</filled>
+		<fillcolor>(0, 0.5, 0, 0.1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>arccircle</id>
+		<pencolor>(0.1, 0.7, 0.3, 1)</pencolor>
+		<pensize>2</pensize>
+	</attributes>
+	<attributes>
+		<id>polygon</id>
+		<pencolor>(1, 0.1, 0.1, 1)</pencolor>
+		<pensize>2</pensize>
+		<filled>true</filled>
+		<fillcolor>(1, 0.1, 0.1, 0.2)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>locus</id>
+		<pencolor>(0.8, 0.2, 0.2, 1)</pencolor>
+		<pensize>2</pensize>
+	</attributes>
+	<attributes>
+		<id>graph</id>
+		<pencolor>(0.2, 0.2, 0.8, 1)</pencolor>
+		<pensize>2</pensize>
+	</attributes>
+	<attributes>
+		<id>conic</id>
+		<pencolor>(0.2, 0.2, 0.8, 1)</pencolor>
+		<pensize>2</pensize>
+	</attributes>
+	<attributes>
+		<id>text</id>
+		<pencolor>(0, 0, 0, 1)</pencolor>
+		<filled>false</filled>
+		<fillcolor>(1, 1, 1, 1)</fillcolor>
+		<fontface>Arial</fontface>
+		<fontsize>18</fontsize>
+	</attributes>
+	<attributes>
+		<id>textzone</id>
+		<pencolor>(0, 0, 0, 1)</pencolor>
+		<filled>true</filled>
+		<fillcolor>(1, 1, 1, 1)</fillcolor>
+		<fontface>Arial</fontface>
+		<fontsize>18</fontsize>
+	</attributes>
+	<attributes>
+		<id>textnote</id>
+		<pencolor>(0, 0, 0, 1)</pencolor>
+		<filled>true</filled>
+		<fillcolor>(1, 0.95, 0.8, 1)</fillcolor>
+		<fontface>Arial</fontface>
+		<fontsize>18</fontsize>
+	</attributes>
+	<attributes>
+		<id>button</id>
+		<pencolor>(0.8, 0.2, 0.2, 1)</pencolor>
+		<filled>false</filled>
+		<fillcolor>(1, 1, 1, 1)</fillcolor>
+		<fontface>Arial</fontface>
+		<fontsize>18</fontsize>
+	</attributes>
+	<attributes>
+		<id>buttonlabel</id>
+		<filled>false</filled>
+		<fillcolor>(0.8, 0.8, 0.8, 0.8)</fillcolor>
+		<fontface>Arial</fontface>
+		<fontsize>18</fontsize>
+	</attributes>
+	<attributes>
+		<id>prism</id>
+		<pencolor>(0.8, 0.2, 0.2, 1)</pencolor>
+		<pensize>2</pensize>
+		<fillcolor>(0, 0.5, 1, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>pyramid</id>
+		<pencolor>(0.8, 0.2, 0.2, 1)</pencolor>
+		<pensize>2</pensize>
+		<fillcolor>(0.2, 0.2, 0.8, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>regularpolyhedron</id>
+		<pencolor>(0.8, 0.8, 0.8, 1)</pencolor>
+		<pensize>2</pensize>
+		<fillcolor>(1, 0.5, 0, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>net</id>
+		<pencolor>(0.55, 0.55, 0.55, 1)</pencolor>
+		<pensize>2</pensize>
+		<fillcolor>(1, 1, 0.5, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>cylinder</id>
+		<fillcolor>(1, 1, 0, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>cone</id>
+		<fillcolor>(1, 0, 1, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>sphere</id>
+		<fillcolor>(0, 1, 0, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>model3</id>
+		<fillcolor>(0.8, 0.8, 0.8, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>slider</id>
+		<pencolor>(0.161, 0.671, 0.886, 1)</pencolor>
+		<filled>false</filled>
+		<fillcolor>(0.92, 0.92, 0.92, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>qcm</id>
+		<pencolor>(0, 0, 0, 1)</pencolor>
+		<filled>false</filled>
+		<fillcolor>(1, 1, 1, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>cellarray</id>
+		<pencolor>(0, 0, 0, 1)</pencolor>
+		<filled>true</filled>
+		<fillcolor>(1, 1, 1, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>dataview</id>
+		<pencolor>(0.4, 0.4, 0.4, 1)</pencolor>
+		<filled>true</filled>
+		<fillcolor>(1, 1, 1, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>grid</id>
+		<pencolor>(0.5, 0.5, 0.5, 0.3)</pencolor>
+		<pensize>2</pensize>
+		<filled>true</filled>
+		<fillcolor>(0.8, 0.8, 0.8, 0.1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>axis</id>
+		<pencolor>(0.3, 0.3, 0.3, 1)</pencolor>
+		<pensize>2</pensize>
+		<filled>false</filled>
+		<fillcolor>(0, 0, 0, 0)</fillcolor>
+		<arrowshape>nor</arrowshape>
+	</attributes>
+	<attributes>
+		<id>component</id>
+		<pencolor>(0.3, 0.3, 0.3, 1)</pencolor>
+		<pensize>2</pensize>
+		<filled>true</filled>
+		<fillcolor>(0.965, 0.757, 0.576, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>facet</id>
+		<pencolor>(0.8, 0.8, 0.8, 1)</pencolor>
+		<pensize>2</pensize>
+		<fillcolor>(1, 0.5, 0, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>media</id>
+		<pencolor>(0, 0, 0, 1)</pencolor>
+		<pensize>2</pensize>
+		<filled>false</filled>
+		<fillcolor>(1, 1, 1, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>group</id>
+		<filled>false</filled>
+		<fillcolor>(0, 1, 0, 1)</fillcolor>
+	</attributes>
+	<attributes>
+		<id>trace</id>
+		<pencolor>(0, 0, 1, 1)</pencolor>
+		<pensize>2</pensize>
+		<filled>false</filled>
+		<fillcolor>(0, 0, 1, 0.1)</fillcolor>
+		<pointshape>dil</pointshape>
+	</attributes>
+	<attributes>
+		<id>container</id>
+		<pencolor>(1, 0.1, 0.1, 1)</pencolor>
+		<pensize>2</pensize>
+		<filled>true</filled>
+		<fillcolor>(1, 0.1, 0.1, 0.2)</fillcolor>
+	</attributes>
+</cps_settings>
+</cps_document>
+</clm_data>

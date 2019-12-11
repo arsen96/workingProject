@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html touch-action="none">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1"/>
+
+    <title>Cabri in HTML5</title>
+    <link href="styles/cabri.8fa83bd449bf1a0d.css" rel="stylesheet" type="text/css"/>
+
+    <link href="scripts/lib/jquery-ui-1.12.0.custom/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="scripts/lib/jquery-ui-1.12.0.custom/jquery-ui.structure.min.css" rel="stylesheet" type="text/css"/>
+    <link href="scripts/lib/jquery-ui-1.12.0.custom/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
+    <!--        <script src="init.js" type="text/javascript"></script>-->
+    <script src="scripts/lib/lodash-core-4.17.15/lodash.core.min.js" type="text/javascript"></script>
+    <script src="scripts/lib/postal-2.0.5/postal.min.js" type="text/javascript"></script>
+
+    <script src="loaded-first.3a28d8bc06b1c076.js" type="text/javascript"></script>
+    <link rel=icon type="image/png" href="icon.png"/>
+</head>
+<body touch-action="none">
+<!-- Show spinner before loading any sources -->
+<div id="page-spinner-container">
+    <img id="page-spinner" src="assets/loading.gif" alt="Loading..."/>
+</div>
+<script src="version_info.js" type="text/javascript"></script>
+<script src="scripts/lib/jquery-3.1.1/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="scripts/lib/jquery-ui-1.12.0.custom/jquery-ui.min.js" type="text/javascript"></script>
+
+<script src="globals.f03f5f72c22f613a.js" type="text/javascript"></script>
+<script src="config.0ed5f5bbad607a11.js" type="text/javascript"></script>
+
+<script src="emcc-out/cdk.0e24f90cb23b3748.js" type="text/javascript"></script>
+<script src="mathml.min.92f193dae114ddb8.js" type="text/javascript"></script>
+
+<!--<script src="scripts/lib/mathml/init.js"></script>
+<script src="scripts/lib/mathml/xmlelement.js"></script>
+<script src="scripts/lib/mathml/prototype.js"></script>
+<script src="scripts/lib/mathml/box.js"></script>
+<script src="scripts/lib/mathml/layout.js"></script>
+<script src="scripts/lib/mathml/operators.js"></script>
+<script src="scripts/lib/mathml/expr.js"></script>
+<script src="scripts/lib/mathml/parse.js"></script>
+<script src="scripts/lib/mathml/serialize.js"></script>-->
+
+<script src="cabri.min.c7d2a50cb4f3bf73.js" type="text/javascript"></script>
+<script src="use-xapi.3331a6e1c1330118.js" type="text/javascript"></script>
+
+<div style="font-family: andika_basicregular; position: absolute; left: -500px; top: 0px">
+    get andika loaded
+</div>
+<span id="ruler"></span>
+<div id="maindiv1" style="position: fixed;">
+    <div id="vue-the-express-toolbar"></div>
+    <div id="calcdisplaymenubg">
+        <div id="calcdisplaymenu">
+            Clear
+        </div>
+    </div>
+    <div id="canvasholder1" class="canvasholder">
+        <canvas id="renderCanvas1" style="width: 100%; height: 100%;"></canvas>
+        <div id="vue-components"></div>
+        <div id="vue-cabri-objects"></div>
+        <div id="page-div">
+            <div id="vue-cabri-objects-percentage"></div>
+        </div>
+    </div>
+    <div id="vue-visual-keyboard"></div>
+    <div id="vue-the-bottom-toolbar"></div>
+</div>
+<script src="components-build.8a7f2d28f0e9dc85.js" type="text/javascript"></script>
+</body>
+</html>

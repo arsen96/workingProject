@@ -1,0 +1,96 @@
+
+.globalContainer{
+  height: 70%;
+}
+
+.buttonsContainer {
+  height: 66%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.codeContainer {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+  flex-direction: row;
+}
+
+.centerPin {
+text-align: center;
+}
+
+.redBorder {
+  border: solid 1px red;
+}
+
+
+.customButton {
+  background: linear-gradient(#5EE1FC, #00B6E8);
+  width: 20vw;
+  height: 10vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin: 3vh;
+  // border: 1px solid red;
+}
+
+.customButton4 {
+  background: linear-gradient(#5EE1FC, #00B6E8);
+  width: 20vw;
+  height: 10vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin: 3vh;
+  // border: 1px solid red;
+}
+
+.numButtonFont {
+  font-size: 7vh;
+  font-family: "quicksand-bold";
+  color: white;
+}
+
+.textButtonFont {
+  font-size: 4vh;
+  font-family: "quicksand-bold";
+  color: white;
+}
+
+.centerCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pin {
+  font-size: 10vh;
+  font-family: "quicksand-bold";
+  align-items: center;
+  text-align: center;
+  color: #00BDEA;
+}
+
+.pinText {
+  font-size: 5vh;
+  font-family: "quicksand-bold";
+  align-items: center;
+  text-align: center;
+  color: #00BDEA;
+}
+
+.buttonEnabled {
+  background-color: lightgreen;
+}
+
+.buttonDisabled {
+  background-color: orange;
+}
+

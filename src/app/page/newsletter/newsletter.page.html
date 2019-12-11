@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>newsletter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <form #heroForm="ngForm" (submit)="postNewSubscriber(heroForm)">
+        <div class="container">
+          <h1 class="subscribe-title">Souscrivez à notre newsletter pour être informé de nos actualités</h1>
+        </div>
+      
+        <div class="container" style="background-color:white">
+          <input type="text" [(ngModel)]="email_type" placeholder="Nom" name="email_type" required>
+          <input type="text" [(ngModel)]="message" placeholder="Adresse e-mail" name="message" required>
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="S'abonner">
+        </div>
+
+       {{ heroForm.value | json  }}
+      </form>
+
+</ion-content>

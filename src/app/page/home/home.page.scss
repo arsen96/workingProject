@@ -1,0 +1,164 @@
+
+.menuLogo {
+  height: 3vh;;
+}
+
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+#canvas_box {
+  width: 100%;
+  height: 100%;
+  // border: solid red 1px;
+}
+
+.imgContainer{
+  width: 75%;
+  height: auto;
+} 
+
+.startButton {
+  // --width: 250px;
+  // --height: 250px;
+
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.round {
+  // --width: 100px;
+  // --height: 100px;
+  --vertical-align: middle;
+  --padding-start: 50px;
+  --padding-end: 50px;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  font-size: 5vh; 
+  font-family: 'quicksand-regular';
+  color: white;
+}
+
+// floating
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+
+
+
+// ooooooooooooooooooooooooo
+
+.pageContainer {
+  // background-image: url("../../../assets/mathia/fond_etoile.png");
+  height: 100%;
+  width: auto;
+  // border: red 1px solid;
+}
+
+.mascotteContainer {
+  height: 50%;
+  // border: yellow 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.mascotte {
+  // width: 40%;
+  height: 80%;
+  // border: green 1px solid;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center; 
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  // margin-left: 30px;
+  // margin-top: 5px;
+}
+
+@keyframes floating {
+  from { transform: translate(0, 12.5%); }
+  50%  { transform: translate(0, -5.5%); }
+  to   { transform: translate(0, 12.5%); }    
+}
+
+.logoContainer {
+  height: 20%;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logotextContainer {
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: orange 3px solid;
+}
+
+.logotext {
+  width: 95%;
+  height: auto;
+}
+
+.startButtonContainer {
+  height: 23%;
+  // border: lightgreen 3px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customButton {
+  // background-color: #00B3E7;
+  background: linear-gradient(#5EE1FC, #00B6E8);
+  // border: 5px white solid;
+  color: white;
+  width: 50%;
+  height: 12vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh;
+  margin-top: 0vh;
+}
+
+.customButton:focus {
+  outline: none;
+}
+
+.buttonText {
+  font-size: 2.5rem;
+  font-family: "quicksand-bold";
+}
+
+.blueBorderHeader {
+  border: #5EE1FC 15px solid; 
+  border-bottom: none;
+}
+
+.blueBorderContent {
+  border: #5EE1FC 15px solid; 
+}

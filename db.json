@@ -1,0 +1,18 @@
+{
+  "feedbacks": [
+    {
+      "id": 1,
+      "amelioration": "Je souhaite que la reconnaissance vocale soit plus fluide et me propose plus de contenu",
+      "suggestion": "Je n'en ai pas",
+      "note": 5,
+      "date": ""
+    },
+    {
+      "amelioration": "test1",
+      "suggestion": "suggestion",
+      "note": 3,
+      "date": "2019-12-11T15:39:10.287Z",
+      "id": 2
+    }
+  ]
+}

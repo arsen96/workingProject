@@ -1,0 +1,26 @@
+ion-card-content,ion-card-header,.ion-img{
+    display:flex;
+    justify-content:center;
+}
+
+a{
+    text-decoration: none;
+    background-color: none;
+    color:black;
+}
+
+ion-card{
+    margin-bottom:5%;
+}
+
+p{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+}
