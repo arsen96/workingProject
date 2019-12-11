@@ -18,9 +18,12 @@
 
         <ion-item>
           <ion-label color="primary">Note</ion-label>
-            <ion-range min="0" max="10" step="1" formControlName="note">
+            <ion-range min="0" max="10" step="1" snaps="true" pin="true"  formControlName="note">
+                <ion-label slot="start">0</ion-label>
+                <ion-label slot="end">10</ion-label>
             </ion-range>
           </ion-item>
+
         
           <ion-button type="submit" expand="block" [disabled]="!form.valid">Envoyer</ion-button>
       </form>

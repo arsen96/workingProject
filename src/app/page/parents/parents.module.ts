@@ -5,8 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { ParentsPageRoutingModule } from './parents-routing.module';
-
 import { ParentsPage } from './parents.page';
+import { File } from '@ionic-native/file/ngx'
+import { SocialSharing } from '@ionic-native/social-sharing/ngx'
+
 
 @NgModule({
   imports: [
@@ -15,6 +17,11 @@ import { ParentsPage } from './parents.page';
     IonicModule,
     ParentsPageRoutingModule
   ],
-  declarations: [ParentsPage]
+  providers:[
+    File,
+    SocialSharing
+  ],
+  declarations: [ParentsPage
+  ]
 })
 export class ParentsPageModule {}
